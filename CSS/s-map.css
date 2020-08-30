@@ -1,0 +1,130 @@
+/*共通*/
+body{
+    font-family: "sans-serif","arial,Century","Times New Roman";
+    overflow-x:hidden;
+    font-size:calc(100vw / (1920 / 22)); /*レスポンシブ：横幅1920pxに対して16pxのフォントサイズ*/
+    color: #465458;
+    background: #f7fafa url("../img/background-img.jpg"); /*花の模様の背景画像*/
+}
+
+header{
+    height: calc(100vw / (1920 / 100));
+    background-color: rgba(255,255,255,0.3);
+}
+
+footer{
+    height: calc(100vw / (1920 / 100));
+    font-size: calc(100vw / (1920 / 15));
+    background-color: rgba(255,255,255,0.6);
+}
+
+ul{
+    float: left;
+}
+
+li{
+    margin-left: calc(100vw / (1920 / 200));
+    padding-bottom: calc(100vw / (1920 / 10));
+    font-size: 25px;
+}
+
+
+/*クリア*/
+.clear{
+    clear: both;
+}
+
+/*改行*/
+.br::before {
+    content: "\A" ;
+    white-space: pre ;
+}
+
+/*改行*/
+.paragraph{
+    padding-left: calc(100vw / (1920 / 20));
+}
+
+.paragraph-big{
+    padding-left: calc(100vw / (1920 / 70));
+}
+
+/*行間*/
+.line-spacing{
+    display: block;
+    line-height: calc(100vw / (1920 / 15));
+}
+
+
+
+/*以下から、クラスごとのｃｓｓ*/
+/*黒バードのlogo画像*/
+.header-logo-button{
+    padding-left: calc(100vw / (1920 / 250));
+    padding-top: calc(100vw / (1920 / 20));
+    padding-bottom: calc(100vw / (1920 / 20));
+    display: inline-block;
+    width: calc(100vw / (1920 / 100));
+    height: calc(100vw / (1920 / 100));
+}
+
+/*透明で黒いカバー*/
+.sm-black-cover{
+    margin: 0 calc(100vw/(1920/100));
+    background: rgba(43,57,61,0.2);
+    padding-bottom: 50px;
+}
+
+/*半透明の白いカバー*/
+.sm-white-cover{
+    width: calc(100vw/(1920/920));
+    margin-left: calc(100vw/(1920/400));
+    margin-top: calc(100vw/(1920/100));
+    margin-bottom: calc(100vw/(1920/100));
+    padding-bottom: calc(100vw/(1920/100));
+    background-color: rgba(255,255,255,0.8);
+}
+
+.white-cover-br{
+    padding: 100px;
+}
+
+/*サイトマップの英語タイトル画像*/
+.sm-conts{
+    text-align: center;
+    padding-top: calc(100vw/(1920/100));
+}
+
+/*リストのレイアウト*/
+.white-cover-br ul li a{
+    text-decoration: none;
+    color: #465458;
+}
+
+.white-cover-br ul li a:hover{
+    color: #a1538e;
+    border-bottom: #a1538e 2px solid;
+    cursor: pointer;
+}
+
+/*フッター*/
+.footer-text-box{
+    padding-left: calc(100vw / (1920 / 220));
+    padding-top: calc(100vw / (1920 / 50));
+}
+
+.footer-text-box span{
+    padding-left: calc(100vw / (1920 / 30));
+    font-size: calc(100vw / (1920 / 13));
+}
+
+.footer-text-box a{
+    text-decoration: none;
+    color: #465458;
+}
+
+.footer-text-box a:hover{
+    color: #a1538e;
+    border-bottom: #a1538e 2px solid;
+    cursor: pointer;
+}

@@ -1,0 +1,308 @@
+/*all*/
+header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.main-wrapper{
+    background-image: url("../img/background-img2.jpg");
+}
+
+.works-main-conts{
+    padding-bottom: 15%;
+}
+
+.works-main-right{
+    float: left;
+}
+
+.works-main-left{
+    width: 45%;
+    float: left;
+    padding-left: 5%;
+    position: relative;
+}
+
+.works-main-left span{
+    position: absolute;
+    right: 0;
+}
+
+span.btn-sticky {
+    position:initial;
+    cursor:pointer;
+}
+
+.works-main-left img{
+    width: 100%;
+}
+
+.works-main-left >span a{
+    font-size: calc(100vw/(1920/27));
+    color: #9a9a9a;
+}
+
+th{
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+    color: #a1538e;
+}
+
+a:hover{
+    color: #77155f;
+    border-bottom: none;
+}
+
+/*works-title*/
+.works-title{
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    text-align: center;
+}
+
+.works-title img {
+    width: 15%;
+    height: initial;
+}
+
+.line-spacing-works{
+    padding-top: 1vh;
+}
+
+.w-blank{
+    height: 2vh;
+    display: inline-block;
+}
+
+.space-p{
+    line-height: 1.2em;
+    font-size: calc(100vw/(1920/16));
+}
+
+.works-main-page-fix{
+    display: none;
+}
+
+/*------------------------------------------------------------ワークスのメイン*/
+/*Tramonto*/
+table{
+    width: 90%;
+}
+
+.works-tramonto-conts{
+    width: 45%;
+    padding-left: 5%;
+}
+
+.works-tramonto-conts h1{
+    font-size: calc(100vw/(1920/40));
+    width: 50%;
+}
+
+.works-tramonto-conts tr{
+    border-bottom: solid 1px #465458;
+    width: 100%;
+}
+
+.works-tramonto-conts th{
+    font-size: calc(100vw/(1920/25));
+}
+
+.works-tramonto-conts td{
+    font-size: calc(100vw/(1920/20));
+    padding-left: 2vh;
+    padding-top: 2vh;
+    width: 75%;
+}
+
+.works-tramonto-img{
+    width: 40%;
+}
+
+/*JS*/
+.position-absolute{
+    position: absolute;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.tramonto-image-container{
+
+}
+
+.tramonto-image-container img{
+    float:left;
+}
+
+.js-switching-displayed-image{
+    display: none;
+}
+
+.tramonto-overflow-hidden{
+    width:calc(100vw/(1920/770));
+    height:calc(100vw/(1920/430));
+    overflow: hidden;
+    margin-bottom: 1%;
+}
+
+/*ボタン*/
+.btn-sticky {
+    display: inline-block;
+    padding: 1vh 2vh;
+    background: #a1538e;
+    color: #ffffff;/*文字色*/
+    font-size: calc(100vw/(1920/15));
+    font-weight: bold;
+}
+.btn-sticky:hover {
+    background: #77155f;
+    color: #ffffff;/*文字色*/
+}
+
+.selected-btn{
+    background: #9a9a9a;
+}
+
+.selected-btn:hover{
+    background: #9a9a9a;
+    cursor: initial;
+}
+
+.selected-btn-image-switching{
+    color: #9a9a9a;
+}
+
+.selected-btn-image-switching:hover{
+   color: #9a9a9a;
+    cursor: initial;
+}
+
+/*↓空き時間に良い名前を考える　ーーー候補、①スライダーナビゲーション②イメージチェンジスマホ*/
+.dis-no-top{
+    display: none;
+}
+
+
+
+/*タブレット縦向き　0.5～0.8までのアスペクト比*/
+@media screen and (max-aspect-ratio: 8/10){
+
+    .sm-hide {
+        display:none;
+    }
+
+    .main-black-cover{
+        height: 100%;
+    }
+
+    .works-title{
+        padding-bottom: 5vh;
+        padding-top: 15vh;
+    }
+
+    .works-title p{
+        font-size: calc(100vw/(1920/50));
+    }
+
+    .works-title img{
+        width: 25%;
+    }
+
+    .works-main-right{
+        float: none;
+    }
+
+    .works-main-left{
+        width: 90%;
+        float: none;
+    }
+
+    .btn-sticky{
+        font-size: calc(100vw/(1920/60));
+    }
+
+    .works-tramonto-conts{
+        width: initial;
+        padding-top: 7%;
+    }
+
+    .works-tramonto-conts h1{
+        font-size: calc(100vw/(1920/85));
+    }
+
+    .w-blank{
+        display: none;
+    }
+
+    .works-tramonto-conts th{
+        font-size: calc(100vw/(1920/62));
+    }
+
+    .works-tramonto-conts a{
+        font-size: calc(100vw/(1920/60));
+    }
+
+    .works-tramonto-conts td{
+        font-size: calc(100vw/(1920/60));
+    }
+
+    .works-main-left span{
+        bottom: 0;
+    }
+
+    .works-main-left >span a{
+        font-size: calc(100vw/(1920/100));
+    }
+
+    .dis-no-allow{
+        display: none;
+    }
+
+    .works-tramonto-conts-dis-no{
+        display: none;
+    }
+
+    .works-main-conts{
+        padding-bottom: 5%;
+    }
+
+    .works-main-page-fix{
+        display: block;
+        padding-bottom: 1vh;
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    .works-main-page-fix select{
+        font-size: calc(100vw/(1920/80));
+    }
+
+    .works-main-page-fix select option:hover{
+        background-color: #77155f;
+    }
+
+    .float-left{
+        float: left;
+    }
+
+    .float-right{
+        float: right;
+    }
+
+    .tramonto-overflow-hidden{
+        width:calc(100vw/(1920/1700));
+        height:calc(100vw/(1920/950));
+    }
+
+    table{
+        width: 95%;
+    }
+}

@@ -1,0 +1,118 @@
+/*共通*/
+body{
+    font-family: "sans-serif","arial,Century","Times New Roman";
+    overflow-x:hidden;
+    font-size:calc(100vw / (1920 / 22)); /*レスポンシブ：横幅1920pxに対して16pxのフォントサイズ*/
+    color: #465458;
+    background: #f7fafa url("../img/background-img.jpg"); /*花の模様の背景画像*/
+}
+
+header{
+    height: calc(100vw / (1920 / 100));
+    background-color: rgba(255,255,255,0.3);
+}
+
+footer{
+    height: calc(100vw / (1920 / 50));
+    font-size: calc(100vw / (1920 / 15));
+    background-color: rgba(255,255,255,0.6);
+}
+
+ul{
+    list-style: none;
+}
+/*クリア*/
+.clear{
+    clear: both;
+}
+
+/*改行*/
+.br::before {
+    content: "\A" ;
+    white-space: pre ;
+}
+
+/*改行*/
+.paragraph{
+    padding-left: 20px;
+}
+
+.paragraph-big{
+    padding-left: 70px;
+}
+
+/*行間*/
+.line-spacing{
+    display: block;
+    line-height: 15px;
+}
+
+
+
+/*以下から、クラスごとのｃｓｓ*/
+/*黒バードのlogo画像*/
+.header-logo-button{
+    padding-left: calc(100vw / (1920 / 250));
+    padding-top: calc(100vw / (1920 / 20));
+    padding-bottom: calc(100vw / (1920 / 20));
+    display: inline-block;
+    width: calc(100vw / (1920 / 100));
+    height: calc(100vw / (1920 / 100));
+}
+
+/*透明で黒いカバー*/
+.tos-black-cover{
+    margin: 0 calc(100vw/(1920/100));
+    background: rgba(43,57,61,0.2);
+    padding-bottom: 50px;
+}
+
+/*半透明の白いカバー*/
+.tos-white-cover{
+    width: calc(100vw/(1920/1320));
+    margin-left: calc(100vw/(1920/200));
+    margin-top: calc(100vw/(1920/100));
+    margin-bottom: calc(100vw/(1920/100));
+    padding-bottom: calc(100vw/(1920/100));
+    background-color: rgba(255,255,255,0.9);
+}
+
+/*利用規約の英語タイトル画像*/
+.tos-conts{
+    text-align: center;
+    padding-top: calc(100vw/(1920/100));
+}
+
+/*利用規約の文章*/
+.tos-comment{
+    padding-left: calc(100vw/(1920/200));
+    padding-top: calc(100vw/(1920/70));
+}
+
+.tos-title{
+    font-size: calc(100vw/(1920/25));
+}
+
+
+
+/*フッター*/
+.footer-text-box{
+    padding-left: calc(100vw / (1920 / 220));
+    padding-top: calc(100vw / (1920 / 20));
+}
+
+.footer-text-box span{
+    padding-left: calc(100vw / (1920 / 30));
+    font-size: calc(100vw / (1920 / 13));
+}
+
+.footer-text-box a{
+    text-decoration: none;
+    color: #465458;
+}
+
+.footer-text-box a:hover{
+    color: #a1538e;
+    border-bottom: #a1538e 2px solid;
+    cursor: pointer;
+}

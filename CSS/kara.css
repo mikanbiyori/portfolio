@@ -1,0 +1,31 @@
+div {
+    background-color: red ; width: 500px; height: 500px;
+}
+
+/*スマホ　縦向き*/
+@media screen and (max-aspect-ratio: 5/10){
+    div{
+        background-color: tomato;
+    }
+}
+
+/*タブレット　縦向き*/
+@media screen and (min-aspect-ratio: 5/10) and (max-aspect-ratio: 8/10){
+    div{
+        background-color: aqua;
+    }
+}
+
+/*PC、タブレット横向き、スマホ横向き*/
+@media screen and (min-aspect-ratio: 8/10) and (max-aspect-ratio: 18/10){
+    div{
+        background-color: blue;
+    }
+}
+
+/*pc, スマホ横向き*/
+@media screen and (min-aspect-ratio: 18/10){
+    div{
+        background-color: chartreuse;
+    }
+}

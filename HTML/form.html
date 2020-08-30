@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Contact
+        </title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/form.css">
+        <script src="../js/main.js"></script>
+    </head>
+    <body>
+        <!-- nav -->
+        <header>
+            <div class="header-logo-button">
+                <a href="../index.html">
+                    <div class="bird-logo"></div>
+                </a>
+            </div>
+            <nav class="h-nav">
+                <ul>
+                    <li>
+                        <a href="about.html" class="current">
+                            <!-- JSで言語切替を行う　※日本語ver -->
+                            <span class="text-jp">紹介</span>
+                            <!-- JSで言語切替を行う　※英語ver -->
+                            <span class="text-en">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="works.html">
+                            <!-- JSで言語切替を行う　※日本語ver -->
+                            <span class="text-jp">作品</span>
+                            <!-- JSで言語切替を行う　※英語ver -->
+                            <span class="text-en">Works</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="form.html">
+                            <!-- JSで言語切替を行う　※日本語ver -->
+                            <span class="text-jp">連絡先</span>
+                            <!-- JSで言語切替を行う　※英語ver -->
+                            <span class="text-en">Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="switch-language" href="#">
+                            <!-- JSで言語切替を行う　※日本語ver -->
+                            <span class="text-jp">English</span>
+                            <!-- JSで言語切替を行う　※英語ver -->
+                            <span class="text-en">日本語</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="clear"></div>
+
+        <div class="main-wrapper">
+            <div class="main-black-cover">  <!--半透明の黒のカバー-->
+                <div class="form-title">
+                    <img alt="contact" src="../img/contact-img.png">
+                    <p class="text-en">Click here to apply</p>
+                    <p class="text-jp">お申込みはこちらから</p>
+                </div>
+                <form>
+                    <div class="form-name">
+                        <input name="f-name" type="text" id="name" placeholder="Name">
+                        <div class="form-main-page-fix"><!-- JSでエラー文言の表示と非表示の処理を書いて「form-main-page-fix」と紐づける予定 -->
+                            <span class="text-en">English</span>
+                            <span class="text-jp">お使いのデバイスは対応しておりません</span>
+                        </div>
+                    </div>
+                    <div class="form-space"></div>
+                    <div class="form-address">
+                        <input name="email" type="email" id="address" placeholder="E-mail">
+                        <div class="form-main-page-fix">
+                            <span class="text-en">English</span>
+                            <span class="text-jp">お使いのデバイスは対応しておりません</span>
+                        </div>
+                    </div>
+                    <div class="form-space"></div>
+                    <div class="form-message">
+                        <textarea name="text" id="message" rows="5" placeholder="Message"></textarea>
+                        <div class="form-main-page-fix">
+                            <span class="text-en">English</span>
+                            <span class="text-jp">お使いのデバイスは対応しておりません</span>
+                        </div>
+                    </div>
+                    <div class="form-space"></div>
+                    <div class="clear"></div>
+                    <div class="btn" id="send-push">
+                        <button>Send</button>
+                    </div>
+                    <div class="send-success form-main-page-fix">
+                        <span class="text-en">English</span>
+                        <span class="text-jp">送信が成功しました</span>
+                    </div>
+                </form>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <!--フッター-->
+        <footer>
+            <div class="footer-text-box">
+                <span>
+                    Copyright © Natsu portforio inc. All Rights Reserved.
+                </span>
+            </div>
+        </footer>
+    </body>
+</html>

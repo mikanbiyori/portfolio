@@ -1,0 +1,209 @@
+/*一般的な、全体のCSSに共通しているものをこちらのCSSに記述している*/
+
+/*共通*/
+html{
+    height: 100%;
+}
+
+body{
+    font-family: "sans-serif","arial,Century","Times New Roman";
+    width: 100%; /*レスポンシブ：横幅*/
+    height: 100%;
+    overflow-x:hidden;
+    color: #465458;
+    background: #f7fafa url("../img/background-img2.jpg"); /*花の模様の背景画像*/
+    background-size: cover;
+}
+
+header{
+    height: 10%;
+    background-color: rgba(255,255,255,0.3);
+    position: relative;
+}
+
+footer{
+    height: 5%;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+/*英語をデフォルトで非表示にする*/
+.text-en{
+    display: none;
+}
+
+/*クリア*/
+.clear{
+    clear: both;
+}
+
+/*改行*/
+.br::before {
+    content: "\A" ;
+    white-space: pre ;
+}
+
+/*以下から、クラスごとのｃｓｓ*/
+/*home-wrapper*/
+.main-wrapper{
+    height: initial;
+    position: relative;
+}
+
+/*黒バードのlogo画像*/
+.header-logo-button{
+    padding-left: 10%;
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+.bird-logo{
+    background-image: url("../img/bird-logo.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+/*ヘッダーの位置やサイズの調整、currentとhoverでカーソルあたるとcssアニメ*/
+.h-nav{
+    display: inline-block;
+    font-size: calc(100vw/(1920/23));
+    position: absolute;
+    bottom: 0;
+}
+
+.h-nav ul li{
+    list-style: none;
+    float: left;
+    padding: 0 3vh 1vh 3vh;
+    font-weight: bold;
+}
+.h-nav ul li a{
+    text-decoration: none;
+    color: #465458;
+    font-size: calc(100vw/(1920/25));
+}
+.h-nav ul li.current a{
+    color: #465458;
+    border-bottom: #465458 2px solid;
+}
+.h-nav ul li a:hover{
+    color: #a1538e;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+/*透明で黒いカバー*/
+.main-black-cover{
+    width:90%;
+    height:initial;
+    margin:0 5%;
+    background: rgba(43,57,61,0.2);
+    z-index: 20;
+}
+
+/*フッター*/
+.footer-text-box{
+    padding-left: 10%;
+}
+
+.footer-text-box span{
+    padding-left: 2%;
+    font-size: calc(100vw/(1920/25));
+}
+
+.footer-text-box a{
+    text-decoration: none;
+    color: #465458;
+}
+
+.footer-text-box a:hover{
+    color: #a1538e;
+    border-bottom: #a1538e 2px solid;
+    cursor: pointer;
+}
+
+
+/*タブレット縦向き　0.5～0.8までのアスペクト比*/
+@media screen and (max-aspect-ratio: 8/10){
+
+    .main-wrapper{
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .main-black-cover {
+        width: 100%;
+        margin: 0;
+    }
+
+    /*header*/
+    .header-logo-button{
+        padding-left: 5%;
+    }
+
+    .h-nav ul li {
+        padding: 0px 5px 10px 30px;
+    }
+
+    .h-nav ul li a{
+        font-size: calc(100vw/(1920/80)); /*80px*/
+    }
+
+    /*footer*/
+    .f-blank {
+        height: 15%;
+    }
+
+    .footer-text-box {
+        padding-left: 5%;
+    }
+
+    .footer-text-box span {
+        font-size: calc(100vw/(1920/50))
+    }
+}
+
+
+/*pc, スマホ横向き　1.8～2.5までのアスペクト比*/
+@media screen and (min-aspect-ratio: 18/10) {
+    /*header*/
+    .h-nav ul li a {
+        font-size: calc(100vw / (1920 / 28));
+    }
+
+    /*footer*/
+    .footer-text-box span {
+        font-size: calc(100vw/(1920/15));
+    }
+
+    .f-blank {
+        height: 10%;
+    }
+}
+
+
+
+
+
+/*スマホ　縦向き*/
+/*　必要になれば使用予定！
+@media screen and (max-aspect-ratio: 5/10){
+
+}
+*/
+
+
+/*PC、タブレット横向き、スマホ横向き*/
+/*　必要になれば使用予定！
+@media screen and (min-aspect-ratio: 8/10) and (max-aspect-ratio: 18/10){
+
+}
+*/

@@ -1,0 +1,194 @@
+/*共通*/
+header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.main-wrapper{
+    background-image: url("../img/background-img2.jpg");
+}
+
+
+.main-black-cover{
+    padding-bottom: 5%;
+}
+
+a{
+    text-decoration: none;
+    color: #a1538e;
+}
+
+a:hover{
+    color: #77155f;
+    border-bottom: none;
+}
+
+.w-blank{
+    height: 1vw;
+}
+
+.space-p{
+    line-height: 1.5em;
+}
+
+/*works-title*/
+.about-title{
+    padding-top: 15vh;
+    padding-bottom: 8vh;
+    text-align: center;
+}
+
+.about-title img {
+    width: 15%;
+    height: initial;
+}
+
+.about-title p{
+    font-size: calc(100vw/(1920/16));
+}
+
+.about-title span{
+    font-size: calc(100vw/(1920/50));
+}
+
+.about-subject{
+    padding-top: initial;
+}
+
+
+/*main-conts*/
+.about-main-conts{
+    width: 100%;
+    margin-bottom: 10vw;
+}
+
+.about-conts-left ,.about-conts-center ,.about-conts-right{
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+.about-conts-left{
+    margin-left: 5%;
+}
+
+.about-conts-right{
+    margin-right: 5%;
+}
+
+.about-conts-left img ,.about-conts-center img ,.about-conts-right img{
+    width: calc(100vw/(1920/120));
+}
+
+.about-conts-sentence{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1vw;
+}
+
+.about-conts-sentence span{
+    font-size: calc(100vw/(1920/30));
+}
+
+.about-conts-sentence p{
+    font-size: calc(100vw/(1920/18));
+}
+
+.turn-back-left{
+    text-align: left;
+}
+
+/*Greetingの薄いの背景*/
+.greeting-wrapper{
+    width: 86%;
+    background-color: #ffffff;
+    border: solid calc(100vw/(1920/5)) #b8bdbe;
+    border-radius: calc(100vw/(1920/10));
+    margin: 0 auto;
+    padding-top: 7vh;
+}
+
+.f-sentence{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5vw;
+    padding-bottom: 5vw;
+}
+
+.f-sentence p{
+    font-size: calc(100vw/(1920/18));
+}
+
+/*footer*/
+.footer-text-box{
+    padding: 0 5%;
+}
+
+.footer-text-box span{
+    padding-left: 7%;
+}
+
+/*タブレット縦向き　0.5～0.8までのアスペクト比*/
+@media screen and (max-aspect-ratio: 8/10){
+    .about-title{
+        padding-bottom: 6vw;
+    }
+
+    .about-title img {
+        width: 40%;
+    }
+
+    .about-title p {
+        font-size: calc(100vw/(1920/55));
+    }
+
+    .about-title span{
+        font-size: calc(100vw/(1920/180));
+    }
+
+    .about-subject{
+        padding-top: 5vw;
+    }
+
+    .w-blank {
+        height: 2vw;
+    }
+
+    .about-conts-sentence span {
+        font-size: calc(100vw/(1920/100));
+    }
+
+    .about-conts-left, .about-conts-center, .about-conts-right{
+        width: 100%;
+        padding-bottom: 7vh;
+        padding-top: 3vh;
+    }
+
+    .about-conts-left{
+        margin-left:initial;
+    }
+
+    .about-conts-left img, .about-conts-center img, .about-conts-right img{
+        width: calc(100vw/(1920/420));
+    }
+
+    .about-conts-sentence p{
+        font-size: calc(100vw/(1920/70));
+    }
+
+    .greeting-wrapper {
+        width: 90%;
+    }
+
+    .f-sentence{
+        width: 88%;
+    }
+
+    .f-sentence p {
+        font-size: calc(100vw/(1920/65));
+    }
+
+
+}

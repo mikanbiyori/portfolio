@@ -1,0 +1,228 @@
+.main-wrapper {
+    height: 85%;
+}
+
+.main-black-cover{
+    height:100%;
+}
+
+/*共通*/
+form{
+    margin: 0 auto;
+    width: 40%;
+}
+
+/*申し込みform*/
+.form-title{
+    text-align: center;
+    padding-top: calc(100vh/(1920/70));
+}
+
+.form-title img{
+    width: 20%;
+    height: 20%;
+}
+
+.form-title p{
+    padding-top: calc(100vw/(1920/10));
+    padding-bottom: calc(100vh/(1920/30));
+    font-size: calc(100vw/(1920/23));
+}
+
+.form-name ,.form-address,.form-message{
+    margin-bottom: 1vh;
+    font-size: 0;
+}
+
+.form-name input ,.form-address input ,.form-message textarea{
+    padding-left: calc(100vw/(1920/15));
+    color: #2e3b40;
+    width: 100%;
+    border: #b7bcbd 2px solid;
+    border-radius: 5px;
+    font-size: calc(100vw/(1920/26));
+    margin-bottom: calc(100vh/(1920/15));
+}
+
+.form-name input ,.form-address input{
+    width: 100%;
+    height: calc(100vw/(1920/27));
+}
+
+.form-name div,.form-address div,.form-message div{
+    color: red;
+    font-size: calc(100vh/(1920/40));
+    /*display: none;*/
+}
+
+
+/*申し込みformのボタン*/
+button{
+    padding: 1vh 2vh 1vh 2vh;
+    font-size: calc(100vw/(1920/27));
+    color: #ffffff;
+    background-color: #a1538e;
+    border: none;
+    border-radius: 5px;
+}
+
+/*cssアニメーション*/
+.btn{
+    text-decoration: none;
+    color: #465458;
+    border-radius: 5px;
+    float: left;
+    margin-right: 1vh;
+}
+
+.btn button{
+    text-align: center;
+}
+
+.btn button:hover{
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #7d416e;
+}
+
+/*send*/
+.send-success{
+    color: green;
+    font-size: calc(100vw/(1920/27));
+    padding-top: 2vh;
+    display: none;
+}
+
+/*PHP勉強後、サーバに送る等を行う処理や表示文言等を検討予定*/
+.form-main-page-fix{
+    display: none;
+}
+
+
+/*タブレット縦向き　0.5～0.8までのアスペクト比*/
+@media screen and (max-aspect-ratio: 8/10){
+    /*共通*/
+    form{
+        width: 70%;
+        height: 70%;
+    }
+
+    .form-space{
+        height: 2vh;
+    }
+
+    /*申し込みform*/
+    .form-title{
+        padding-top: 2vh;
+    }
+
+    .form-title img {
+        width: 50%;
+        height: initial;
+    }
+
+    .form-title p {
+        padding-top: 2%;
+        padding-bottom: 5%;
+        font-size: calc(100vw/(1920/80));
+    }
+
+    .form-name, .form-address, .form-message {
+        padding-top: initial;
+    }
+
+    .form-name input ,.form-address input{
+        font-size: calc(100vh/(1920/50));
+        height: initial;
+    }
+
+    .form-message textarea{
+        font-size: calc(100vh/(1920/50));
+    }
+
+    .form-name span ,.form-address span,.form-message span{
+        font-size: calc(100vh/(1920/42));
+    }
+
+    /*申し込みformのボタン*/
+    button{
+        margin-top: initial;
+        font-size: calc(100vw/(1920/65));
+    }
+
+    /*send*/
+    .send-success{
+        color: green;
+        font-size: calc(100vw/(1920/65));
+        padding-top: 2vh;
+        display: none;
+    }
+}
+
+
+/*pc, スマホ横向き　2.1～2.5までのアスペクト比*/
+/*
+@media screen and (min-aspect-ratio: 21/10){ */
+    /*共通*/
+/*    form{
+        width: 90%;
+        height: 75%;
+
+    }
+
+    .form-space{
+        height: initial;
+        float: left;
+    }
+*/
+
+    /*申し込みform*/
+  /*  .form-title{
+        padding-top: calc(100vw/(1920/50));
+    }
+
+    .form-title img {
+        height: 17vh;
+        width: initial;
+    }
+
+    .form-title p {
+        padding-top: 1vh;
+        font-size: calc(100vh/(1920/75));
+    }
+
+    .form-name,.form-address{
+        float: left;
+        width: 40%;
+        margin-right: 10%;
+    }
+
+    .form-name, .form-address, .form-message {
+        padding-top: 3vh;
+    }
+
+    .form-name input ,.form-address input{
+        display: inline-block;
+        width: 80%;
+        height: 6vh;
+        font-size: calc(100vh/(1920/50));
+    }
+
+    .form-message{
+        width: 100%;
+    }
+
+    .form-message textarea{
+        margin-top: 5%;
+        width: 82%;
+        height: 10vh;
+        font-size: calc(100vh/(1920/50));
+    }
+*/
+    /*申し込みformのボタン*/
+/*
+    button{
+        margin-top: 5vh;
+        width: 12vh;
+    }
+}*/

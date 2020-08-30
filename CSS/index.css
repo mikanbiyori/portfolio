@@ -1,0 +1,118 @@
+.main-wrapper {
+    height: 85%;
+}
+
+.main-black-cover{
+    height:100%;
+}
+
+/*名前と顔写真をまとめたボックスで位置調整*/
+.home-conts-name-face{
+    padding-left: 15%;
+    padding-top: 7%;
+}
+
+.home-conts-name, .home-conts-face{
+    padding-right: 1%;
+}
+
+.home-conts-name{
+    width: 20%;
+    height: 20%;
+}
+
+.home-conts-face{
+    width: 7%;
+}
+
+/*サイトの紹介文*/
+.home-site-introduction{
+    padding-left: 16%;
+    line-height: normal;
+}
+
+.site-info-text{
+    font-size: 27px;
+    z-index: 30;
+    text-shadow: 1px 1px 3px white;
+    position: absolute;
+}
+
+.text-s{
+    font-size: 19px;
+}
+
+/*Twitter*/
+.twitter-font-color{
+    color: #a1538e;
+    text-decoration: none;
+}
+
+.twitter-font-color:hover{
+    color: #a1538e;
+    border-bottom: #a1538e 2px solid;
+    cursor: pointer;
+}
+
+/*背景に鳥の画像の配置*/
+.background-bird-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 80%;
+    z-index: 10;
+}
+
+/*タブレット縦向き　0.5～0.8までのアスペクト比*/
+@media screen and (max-aspect-ratio: 8/10){
+
+    .home-conts-name-face {
+        padding-left: 7%;
+        padding-top: 10%;
+    }
+
+    .home-conts-name {
+        width: 40%;
+    }
+
+    .home-conts-face {
+        width: 15%;
+    }
+
+    .site-info-text {
+        padding-top: 1%;
+        font-size: calc(100vw/(1920/75));
+    }
+
+    .home-site-introduction {
+        padding-left: 13%;
+    }
+
+    .text-s{
+        font-size: 12px;
+    }
+
+    .background-bird-img{
+        width: 80%;
+        height: initial;
+        right: -20%;
+    }
+
+}
+
+/*pc, スマホ横向き　1.8～2.5までのアスペクト比*/
+@media screen and (min-aspect-ratio: 18/10){
+
+    .home-conts-name-face {
+        padding-top: 4%;
+    }
+
+    .site-info-text {
+        font-size: calc(100vw/(1920/30));
+    }
+
+    .text-s{
+        font-size: 15px;
+    }
+
+}
